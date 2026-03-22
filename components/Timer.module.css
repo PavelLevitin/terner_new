@@ -1,0 +1,66 @@
+.infoBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: rgba(210, 24, 24, 1);
+  border: 2px solid rgba(60, 10, 10, 0.8);
+  border-radius: 8px;
+  padding: 0 32px;
+  margin-bottom: 8px;
+  height: 150px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+
+.dayDate {
+  font-family: 'Roboto Slab', serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  white-space: nowrap;
+}
+
+.countdown {
+  font-family: 'Roboto Slab', serif;
+  font-size: 70px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+  white-space: nowrap;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .infoBar {
+    height: 95px;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .dayDate {
+    font-size: 28px;
+  }
+  .countdown {
+    font-size: 44px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .infoBar {
+    height: 52px;
+    gap: 10px;
+    padding: 0 10px;
+    margin-bottom: 5px;
+  }
+  .dayDate {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .countdown {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+}
