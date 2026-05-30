@@ -213,7 +213,7 @@ export default function Home() {
         <span className={styles.rotateText}>Please rotate your device to portrait mode</span>
       </div>
 
-      <audio ref={beepRef} src="/beep.mp3" preload="auto" />
+      <audio ref={beepRef} src="/ternerclock/beep.mp3" preload="auto" />
 
       {showAlert && (
         <div className={alertClass}>
